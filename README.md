@@ -15,10 +15,13 @@ pip install -r requirements.txt
 •	For faster training, access to multiple GPUs is recommended. The gen_run.py script facilitates multi-GPU execution.
 Directory Structure
 After downloading the LibriBrain dataset, organize the files into the following structure under the SHINE_codes directory:
+
 SHINE_codes/
-SHINE_codes/
+
 ├── libribrain/
+
 │   └── data/
+
 │       ├── Sherlock1/
 │       │   └── derivatives/
 │       │       ├── events/
