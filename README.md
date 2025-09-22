@@ -46,9 +46,13 @@ SHINE_codes/
 # Data Preprocessing
 The preprocessing scripts in standard_codes/preprocess_code/ prepare the MEG data for training and testing. The scripts include:
 •	downsample_meg.py: Downsamples the training MEG data to 100Hz.
+
 •	downsample_meg_test.py: Downsamples the holdout (test) data to 100Hz.
+
 •	preprocess_01_100Hz.py: Extracts silent and speech segment labels from the training set's events folder, generating 0-1 binary labels for each session's MEG data.
+
 •	run0.slurm: A SLURM script for running preprocessing jobs on a cluster.
+
 
 # Training and Testing
 The scripts in standard_codes/train_and_test_code/ handle model training, validation, and prediction generation. Key files include:
