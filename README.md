@@ -17,34 +17,28 @@ Directory Structure
 After downloading the LibriBrain dataset, organize the files into the following structure under the SHINE_codes directory:
 
 SHINE_codes/
-
 ├── libribrain/
-
-│   └── data/
-
-│       ├── Sherlock1/
-
-│       │   └── derivatives/
-
-│       │       ├── events/
-
-│       │       └── serialised/
-
-│       ├── ... (Sherlock2 to Sherlock7, same structure)
-
+│   ├── data/
+│   │   ├── Sherlock1/
+│   │   │   ├── derivatives/
+│   │   │   │   ├── events/
+│   │   │   │   ├── serialised/
+│   │   ├── Sherlock2/
+│   │   │   ├── derivatives/
+│   │   │   │   ├── events/
+│   │   │   │   ├── serialised/
+│   │   ├── ...
+│   │   ├── Sherlock7/
+│   │   │   ├── derivatives/
+│   │   │   │   ├── events/
+│   │   │   │   ├── serialised/
 ├── libribrain_test/
-
-│   └── data/
-
-│       └── serialised/
-
+│   ├── data/
+│   │   ├── serialised/
 ├── standard_codes/
-
 │   ├── preprocess_code/
-
 │   ├── train_and_test_code/
-
-│   └── code_v75/
+│   ├── code_v75/
 
 
 
