@@ -16,28 +16,23 @@ pip install -r requirements.txt
 Directory Structure
 After downloading the LibriBrain dataset, organize the files into the following structure under the SHINE_codes directory:
 SHINE_codes/
+SHINE_codes/
 ├── libribrain/
-│   ├── data/
-│   │   ├── Sherlock1/
-│   │   │   ├── derivatives/
-│   │   │   │   ├── events/
-│   │   │   │   ├── serialised/
-│   │   ├── Sherlock2/
-│   │   │   ├── derivatives/
-│   │   │   │   ├── events/
-│   │   │   │   ├── serialised/
-│   │   ├── ...
-│   │   ├── Sherlock7/
-│   │   │   ├── derivatives/
-│   │   │   │   ├── events/
-│   │   │   │   ├── serialised/
+│   └── data/
+│       ├── Sherlock1/
+│       │   └── derivatives/
+│       │       ├── events/
+│       │       └── serialised/
+│       ├── ... (Sherlock2 to Sherlock7, same structure)
 ├── libribrain_test/
-│   ├── data/
-│   │   ├── serialised/
+│   └── data/
+│       └── serialised/
 ├── standard_codes/
 │   ├── preprocess_code/
 │   ├── train_and_test_code/
-│   ├── code_v75/
+│   └── code_v75/
+
+
 
 # Data Preprocessing
 The preprocessing scripts in standard_codes/preprocess_code/ prepare the MEG data for training and testing. The scripts include:
