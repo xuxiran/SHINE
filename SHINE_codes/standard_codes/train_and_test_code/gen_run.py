@@ -1,0 +1,23 @@
+for i in range(16):
+    run_file = "run{}.slurm".format(i)
+    seed = i*10
+    with open(run_file, "w") as f:
+        f.write("#!/bin/bash\n")
+        f.write("#SBATCH -o ./log/%j.out\n")
+        f.write("#SBATCH -e ./log/%j.err\n")
+        f.write("#SBATCH --ntasks-per-node=8\n")
+        f.write("#SBATCH --partition=GPUA800\n")
+        f.write("#SBATCH --exclude=gpua800n22\n")
+        f.write("#SBATCH -J vf_{}\n".format(i))
+        f.write("#SBATCH --gres=gpu:1\n\n")
+        # f.write("python main.py --seed {} --model_name {}\n".format(seed,model))
+        f.write("python main.py --seed {}\n".format(seed))
+        f.write("python main.py --seed {}\n".format(seed+1))
+        f.write("python main.py --seed {}\n".format(seed+2))
+        f.write("python main.py --seed {}\n".format(seed+3))
+        f.write("python main.py --seed {}\n".format(seed+4))
+        f.write("python main.py --seed {}\n".format(seed+5))
+        f.write("python main.py --seed {}\n".format(seed+6))
+        f.write("python main.py --seed {}\n".format(seed+7))
+        f.write("python main.py --seed {}\n".format(seed+8))
+        f.write("python main.py --seed {}\n".format(seed+9))
