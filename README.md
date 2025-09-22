@@ -23,17 +23,29 @@ SHINE_codes/
 │   └── data/
 
 │       ├── Sherlock1/
+
 │       │   └── derivatives/
+
 │       │       ├── events/
+
 │       │       └── serialised/
+
 │       ├── ... (Sherlock2 to Sherlock7, same structure)
+
 ├── libribrain_test/
+
 │   └── data/
+
 │       └── serialised/
+
 ├── standard_codes/
+
 │   ├── preprocess_code/
+
 │   ├── train_and_test_code/
+
 │   └── code_v75/
+
 
 
 
