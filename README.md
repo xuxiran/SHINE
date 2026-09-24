@@ -1,3 +1,4 @@
+![Uploading 45100875-1b27-4cca-baa2-2924a3a02bb1.png…]()
 # SHINE
 
 This repository contains **two distinct codebases** for decoding speech-related information from noninvasive brain recordings. Choose the directory that matches your task; the competition and ICASSP experiments use different targets and protocols.
