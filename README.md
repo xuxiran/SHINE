@@ -4,4 +4,4 @@ ICASSP_SHINE codes will be released after publication.
 
 # SHINE
 
-The SHINE team placed **second in the Speech Detection Extended Track** of the **NeurIPS 2025 PNPL Competition**. See the [official leaderboard](https://libribrain.com/editions/2025/leaderboard/) and [prize listing](https://libribrain.com/editions/2025/prizes/). This result pertains to the competition entry in `SHINE_codes/`.
+The SHINE team placed **second in the Speech Detection Extended Track** of the **NeurIPS 2025 PNPL Competition**. See the [official leaderboard](https://libribrain.com/editions/2025/leaderboard/) and [prize listing](https://libribrain.com/editions/2025/prizes/). 
