@@ -1,0 +1,25 @@
+{
+  "source": "Historical work/tmp/expNN/model.py implementations",
+  "input_channels_for_parameter_counts": 204,
+  "hidden_channels": 96,
+  "parameter_counts": {
+    "exp53": 439913,
+    "exp54": 670612,
+    "exp56": 634881,
+    "exp57": 614145,
+    "exp58": 664065
+  },
+  "variants": {
+    "exp53": "No pooled context; envelope-guided decoding enabled. Not a pure single-component ablation vs exp55.",
+    "exp54": "Pooled context with fixed 0.5 output averaging; envelope-guided decoding enabled. Not a pure single-component ablation vs exp55.",
+    "exp56": "Uses only the final local block output before context; hierarchy compression remains.",
+    "exp57": "Simple 1x1 spatial projection instead of residual spatial adapter.",
+    "exp58": "Ungated depthwise temporal convolution."
+  },
+  "runner_notes": [
+    "Input tensor shape is (batch, input_channels, time).",
+    "All variants return envelope, mel, aux_envelopes, and aux_mels.",
+    "exp53 and exp54 additionally return gate.",
+    "Pooled-context variants use pool size 8 and require valid avg_pool1d input length."
+  ]
+}
